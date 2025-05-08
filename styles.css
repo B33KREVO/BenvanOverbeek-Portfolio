@@ -154,15 +154,15 @@ header {
 }
 
 .hero-freetime {
-  background-image: url("images/IMG_1463.jpg");
+  background-image: url("/images/IMG_1463.jpg");
 }
 
 .hero-school {
-  background-image: url("images/IMG_1400.jpg");
+  background-image: url("/images/IMG_1400.jpg");
 }
 
 .hero-present {
-  background-image: url("images/IMG_1117.jpg");
+  background-image: url("/images/IMG_1117.jpg");
 }
   
 
@@ -275,8 +275,7 @@ header {
     aspect-ratio: 1 / 1; 
     border-radius: 4px;
   }
-  
-  
+
   .project h2 {
     margin-top: 10px;
     font-size: 1.5em;
@@ -391,7 +390,7 @@ header {
   }
   
   .skills-section {
-  background-image: url("images/IMG_1408.jpg");
+  background-image: url(/images/IMG_1408.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -577,11 +576,23 @@ header {
   }
   
   .photo-text h2 {
-    color: #5b8aa0;
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 15px;
   }
+
+  .school .photo-text h2 {
+    color: #5b8aa0; /* blue */
+  }
+  
+  .freetime .photo-text h2 {
+    color: #7da77d; /* green */
+  }
+  
+  .presents .photo-text h2 {
+    color: #d17c78; /* red */
+  }
+  
   
   .photo-text p {
     color: #777777;
