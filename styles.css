@@ -164,7 +164,71 @@ header {
 .hero-present {
   background-image: url("images/IMG_1117.jpg");
 }
-  
+
+.hero-trash{
+  background-color: hsl(199, 50%, 54%);
+}
+
+.hero-doloris{
+  background-color: hsl(244, 32%, 51%);
+  background-blend-mode:color;
+}
+
+.hero-skateboard{
+  background-image: url("Overig/SkateBoard/20240912_235044.jpg");
+}
+
+.hero-dream{
+  background-image: url("Escape Room/Schermafbeelding\ 2025-05-07\ 215545.png");
+}
+
+.hero-patriarchy{
+  background-color: hsl(61, 63%, 76%);
+}
+
+.hero-fidget{
+  background-image: url("Fidget SLBxD 1/20230908_115052\ \(1\).jpg");
+}
+
+.hero-library{
+  background-image: url("Boekenkast/20240418_134102.jpg");
+}
+
+.hero-dopamine{
+  background-image: url("Theatrale Interventie/20250422_124240.jpg");
+}
+
+.hero-freespace{
+  background-image: url("freespace Room Isa/20250221_104200.jpg");
+}
+
+.hero-remind{
+  background-image: url("HeadBand/BigPicSpread.jpg");
+}
+
+.photo-img-hero{
+  justify-content: center;
+  flex: 1;
+  max-width: 600px;
+}
+
+.photo-img-hero img{
+  width: 100%;
+  max-height: 650px; /* or adjust as needed */
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.photo-img-hero-ftp img{
+  width: 100%;
+  max-height: 600px; /* or adjust as needed */
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
   .hero h1 {
     font-size: 4em;
@@ -181,6 +245,14 @@ header {
     margin-top: 2vh;
     font-weight: bold;
 
+  }
+
+  .hero-content-dif h1{
+    color: black;
+  }
+
+  .hero-content-skate h1{
+    color: #d17c78;
   }
 
   .about {
@@ -341,9 +413,10 @@ header {
   }
   
   .contact {
-    padding: 60px 20px;
+    padding: 60px 0px;
     width: 100vw;
     text-align: center;
+    justify-content: center;
     margin: 0 auto;
     background-color: white;
     margin-bottom: 5vh;
@@ -541,6 +614,8 @@ header {
   z-index: 1;
 }
 
+
+
   /* Responsive behavior */
   @media (max-width: 768px) {
     .icon-grid {
@@ -575,6 +650,46 @@ header {
     max-width: 500px;
   }
   
+  .photo-text button{
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .photo-text img{
+    width: 100%;
+    max-height: 350px; /* or adjust as needed */
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  /* Specifieke kleuren per knop */
+  #present {
+    background-color: #d17c78; /* warm rood/bruin */
+  }
+  
+  #school {
+    background-color: #5b8aa0; /* koel blauw/grijs */
+  }
+  
+  #freetime {
+    background-color: #7da77d; /* zacht groen */
+  }
+
+  .photo-text button:hover{
+    opacity: 85%;
+  }
+  
+
   .photo-text h2 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -614,7 +729,14 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
-  
+  .photo-img-ftp img {
+    width: 100%;
+    max-height: 450px; /* or adjust as needed */
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
 
   /* Footer */
   footer {
